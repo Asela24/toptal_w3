@@ -8,15 +8,9 @@
     --gap: 6px;
 }
 
-html, body {
-    height: 100%;
-    overflow: hidden;
-}
-
 body {
     margin: 0;
 }
-
 
 
 .align-text {
@@ -30,43 +24,49 @@ body {
 }
 
 .wrapper {
-    margin: var(--gap);
     display: flex;
     flex-direction: column;
-    height: calc( 100% - var(--gap)*2);
+
+    height:100vh;
+    padding: var(--gap);
+    box-sizing: border-box;
 }
 
 header {
     width: 100%;
-    text-align: center;
     padding: calc(var(--gap)*2) 0;
+    text-align: center;
+
 }
 
 .wrapper_main {
     display: flex;
-    margin: var(--gap) 0;
     flex-grow: 1;
+
+    margin: var(--gap) 0;
 }
 
 .sidebar {
-    color: var(--green);
     flex-grow: 1;
+
     margin-right: var(--gap);
+
+    color: var(--green);
     text-align: center;
 }
 
 main {
-    flex-grow: 3;
-
     display: flex;
     flex-direction: column;
-    border: var(--gap) solid var(--light-gray);
+    flex-grow: 3;
 
+    border: var(--gap) solid var(--light-gray);
 }
 
 .footer {
-    text-align: center;
     padding: var(--gap) 0;
+
+    text-align: center;
     color: var(--dark-gray);
 }
 
@@ -76,18 +76,20 @@ section {
 
 .button-section {
     display: flex;
-    padding: var(--gap) 0;
     justify-content: space-around;
+
+    padding: var(--gap) 0;
     box-sizing: content-box;
     border-bottom: var(--gap) solid var(--light-gray);
 }
 
 .buttons {
-    text-decoration: underline;
-    color: var(--red);
-    border: none;
     width: 100px;
     padding: var(--gap);
+    border: none;
+
+    text-decoration: underline;
+    color: var(--red);
     font-weight: bold;
 }
 
